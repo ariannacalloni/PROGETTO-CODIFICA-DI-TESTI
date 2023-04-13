@@ -1,0 +1,343 @@
+/*Fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&family=Noto+Serif+JP:wght@400;500;600&family=Open+Sans&family=PT+Serif:wght@400;700&family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IM+Fell+DW+Pica:ital@0;1&display=swap');
+/*Rules*/
+/*
+font-family: 'Nanum Gothic', sans-serif;
+font-family: 'Noto Serif JP', serif;
+font-family: 'Open Sans', sans-serif;
+font-family: 'PT Serif', serif;
+font-family: 'Raleway', sans-serif;
+font-family: 'IM Fell DW Pica', serif;
+*/
+
+html {
+    scroll-behavior: smooth;
+  }
+
+/* Add a black background color to the top navigation */
+.topnav {
+    background-color: #79a1b0;
+    overflow: hidden;
+}
+  
+  /* Style the links inside the navigation bar */
+.topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 26px 24px;
+    text-decoration: none;
+    font-size: 20px;
+}
+  
+  /* Change the color of links on hover */
+.topnav a:hover {
+    background-color: #e5a587;
+    color: black;
+}
+  
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0; 
+    padding: 0; 
+    font-family: 'Noto Serif JP', serif; 
+    font-weight: 400;
+    background-color: #eaeaea;
+}
+
+/*sezione del titolo*/
+#first{
+    text-align:center;
+    height:100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+#main-title{
+    font-size: 42px;
+}
+
+#sub-title{
+    font-size: 36px;
+}
+
+#info1, #info2{
+    display: inline-block;
+    vertical-align: middle;
+}
+
+/*Titolo "Descrizione"*/
+#title_descrizione{
+    font-size: 36px;
+}
+
+
+/*bottoni avanti/indietro*/
+#back_img, #next_img{
+    width: 45px;
+}
+
+#btn_back, #btn_next{
+    border: none;
+    background-color: #eaeaea;
+    cursor: pointer;
+    
+}
+
+#div_buttons{
+    text-align: center;
+}
+
+
+/*sezione descrizione*/
+#main_descrizione{
+    margin:60px;
+}
+
+
+/*img drop*/
+.drop, .drop2{
+    width: 25px;
+    height: 25px;
+    cursor:pointer;
+    display: inline;
+  }
+
+.drop, .drop2{
+    margin-left: 530px;
+}
+
+.drop2{
+    display: none;
+}
+
+
+.descrizione_d >h2{
+    display: inline;
+}
+
+.descrizione_d{
+    margin-top: 33px;
+}
+
+
+.descrizione{
+    background-color: #b4d2c4;
+    border-radius: 18px;
+    -webkit-box-shadow: 5px 5px 12px 5px #A1A1A1;
+    box-shadow: 5px 5px 12px 5px #A1A1A1;
+    padding: 3px 0px 30px 53px;
+    margin-top: 40px;
+    margin-bottom: 62px;
+}
+
+
+/*descrizioni immagini*/
+.desc_img{
+    text-align: center;
+    font-size: 40px;
+    font-style: italic;
+    font-family: 'IM Fell DW Pica', serif;  
+}
+
+/*galleria di foto*/
+.img_class{
+    margin: auto;
+    width: 750px;
+}
+
+
+/*pulsantiera*/
+.buttons{
+    border: none;
+    padding: 20px;
+    border-radius: 38px;
+    margin-right: 15px;
+    font-size: 20px;
+    margin-top: 20px;
+    -webkit-box-shadow: 5px 5px 12px 5px #A1A1A1;
+    box-shadow: 5px 5px 12px 5px #A1A1A1;
+    cursor:pointer;
+}
+
+.bottoni_categ{
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 15px
+}
+
+#cancellatura{
+    background-color: violet;
+}
+
+#correzione{
+    background-color: red;
+}
+
+#abbreviazione{
+    background-color:dodgerblue ;
+}
+
+#normalizzazione{
+    background-color: rgb(0,128,0) ;
+}
+
+#aggiunta{
+    background-color:rgb(255,215,0) ;
+}
+
+#persona{
+    background-color:rgb(229, 165, 135) ;
+}
+
+#luogo{
+    background-color: rgb(223, 205, 191);
+}
+
+#organizzazione{
+    background-color:rgb(164, 208, 187) ;
+}
+
+/*
+#data{
+    background-color: ;
+}
+*/
+
+
+/*Section caratteristiche*/
+.div_inline>h3, .div_inline>p{
+    display: inline;
+}
+
+/*linea caratteristiche*/
+.line_caratteristiche{
+    border-top: 1.5px solid black;
+}
+
+
+/*testo dei giorni*/
+.div_text{
+    font-size: 23px;
+    line-height: 2.5;
+    margin: auto;
+    width: fit-content;
+    margin-top: -40px;
+    margin-bottom: 85px;
+}
+
+/*titoli dei giorni*/
+.div_giorno h1 {
+    text-align: center;
+    margin-top: 60px;
+}
+
+
+.numero_riga{
+    font-size: 24px;
+    padding-right: 10px;
+}
+
+/*liste*/
+#main_liste{
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 100px;
+}
+
+#persone{
+    background-color: #e5a587;
+}
+
+#luoghi{
+    background-color: #A1A1A1;
+}
+
+#organizzazioni{
+    background-color: #b4d2c4;
+}
+
+.list_flex{
+    margin-bottom: -60px;
+    margin-top: -13px;
+    /*padding-right: 85px;
+    padding-top: 25px;
+    padding-bottom: 20px;
+    padding-left: 100px; 
+*/
+    
+    padding-right: 78px;
+    padding-top: 30px;
+    padding-bottom: 35px;
+    padding-left: 76px;
+    border-radius: 10px;  
+}
+
+/*note persona*/
+.note_p{
+    width:300px;
+}
+
+/*note luogo*/
+.note_l{
+    width:300px;
+}
+
+/*note org*/
+.note_o{
+    width:500px;
+}
+
+/*bibliografia*/
+#bibliografia{
+    background-color: #f9f9f6;
+}
+
+#main_bibliografia{
+    margin: 60px 60px -60px 60px;
+        padding-bottom: 30px;
+        padding-top: 20px;
+}
+
+#main_bibliografia > ul{
+    list-style-type: none;
+    margin: 0px 30px -26px -38px;
+}
+
+#main_bibliografia > ul > li > b{
+    font-size: 24px;
+}
+
+
+/*footer*/
+footer{
+    background-color: #e5a587;
+}
+
+#main_riferimenti{
+        margin: 60px 60px -22px 60px;
+        padding-bottom: 30px;
+        padding-top: 20px;
+}
+
+#car1, #car2, #car3{
+    cursor:pointer;
+}
+
+.person_of_list, .place_of_list, .org_of_list{
+    cursor:pointer;
+}
+
+
+
+/*
+Flaticon
+next icon:<a href="https://www.flaticon.com/free-icons/next" title="next icons">Next icons created by Kiranshastry - Flaticon</a>
+
+
+*/

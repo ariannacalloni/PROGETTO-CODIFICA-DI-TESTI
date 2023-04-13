@@ -1,0 +1,1324 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+    Raccolta degli scritti autografi di Emanuele Artom redatti tra il 1943 e il 1944 
+    Filename:diario.xml
+    Author:Enrica Di Rado, Arianna Calloni
+    Date: 2023-03
+-->
+<!DOCTYPE TEI SYSTEM "tei_all.dtd">
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+	<teiHeader>
+		<fileDesc>
+			<!--Informazioni riguardo il titolo del lavoro-->
+			 <titleStmt> <!--obb-->
+				<title type="full">Diari di Emanuele Artom - Edizione Digitale</title>
+				<title type="sub">Novembre 1943 - Febbraio 1944</title>              
+				<author ref="#EA">Emanuele Artom</author>
+				<respStmt> 
+  					<resp>Lettera di accompagnamento scritta da:</resp>
+  						<persName ref="#AS">Amalia Segre</persName> 			
+					</respStmt>
+			</titleStmt> 
+
+			<!--Informazioni editoriali-->
+			<editionStmt>
+				<edition>Digital Edition
+				    <date when="04-2023">Aprile 2023</date>
+				</edition>
+				<respStmt>
+				    <resp>Progetto coordinato da </resp>
+				    <name ref="#AMDG">Angelo Mario Del Grosso</name>
+				</respStmt>
+				<respStmt>
+				    <resp>Codifica e trascrizione del testo a cura di </resp>
+				    <name ref="#AC">Arianna Calloni</name>
+				    <name ref="#EDR">Enrica Di Rado</name>
+				</respStmt>
+			</editionStmt>
+
+			<!--Informazioni riguardo la pubblicazione-->
+			<publicationStmt>
+				<publisher>Università di Pisa</publisher>
+				<availability status="free">
+					<p>Opera ad accesso libero</p>
+				</availability>
+				<pubPlace>Pisa</pubPlace>
+				<date when="2023-04">Aprile 2023</date>
+			</publicationStmt>
+
+            		<!--Informazioni riguardanti la fonte originale-->
+            		<sourceDesc>
+				<msDesc>
+					<msIdentifier>                 
+						<country key="IT" type="nation">Italia</country> 
+						<settlement>Milano</settlement>
+						<repository role="history institute" ref="http://digital-library.cdec.it/cdec-web/storico/detail/IT-CDEC-ST0003-000006/diari.html"><orgName ref="#CDEC">Centro di documentazione ebraica contemporanea</orgName></repository> 
+						<collection>Fondo Emanuele Artom</collection>
+						<idno type="inventory">b.1, fasc.9 </idno>
+					</msIdentifier>
+
+					<msContents>
+						<msItem>
+							<title>Diari</title>
+							<author ref="#EA">Emanuele Artom</author>
+							<respStmt>
+								<resp>Lettera di accompagnamento scritta da:</resp>
+								<persName ref="#AS">Amalia Segre</persName>
+							</respStmt>
+							<docDate><date from="1943-11-30" to="1943-12-2">30 novembre 1943 - 2 dicembre 1943</date></docDate>		
+							<textLang mainLang="it">Italiano</textLang>
+						</msItem>
+					</msContents>
+
+					<!--Descrizione fisica del manoscritto-->
+					<physDesc>
+						<objectDesc form="manuscript">
+							<supportDesc material="paper" source="http://digital-library.cdec.it/cdec-web/storico/detail/IT-CDEC-ST0003-000006/diari.html"> 
+								<support>
+								Fogli di <material>carta</material>
+								</support>
+								<extent>
+									<measure unit="pages" quantity="174">
+										Il manoscritto presenta due pagine riguardo l'appunto di <persName ref="#AS">Amalia Artom</persName> e una seconda parte contenente il diario,
+										che si compone di <num>172</num> pagine. 
+									</measure>
+								</extent>
+								<condition>
+									<p>Le pagine del diario sono ben conservate. In generale la lettura non è ostacolata, tranne per alcuni passaggi a causa di 
+									bruciature e sbavature di inchiostro.</p>
+								</condition>
+							</supportDesc>
+						</objectDesc>
+						<handDesc hands="2">
+							<handNote scope="minor" medium="black pen red pen" script="cursive"> 
+								<p>La prima pagina del manoscritto consiste in un'epigrafe di <persName ref="#AS">Amalia Segre</persName> scritta a penna, in corsivo.</p>
+							</handNote>
+							<handNote scope="major" medium="black pen pencil greenish-ink" script="cursive"> 
+								<p>Il diario di <persName ref="#EA">Emanuele Artom</persName> inizia dalla seconda pagina del manoscritto.</p>
+							</handNote>
+						</handDesc>
+						<typeDesc>
+							<p>Il diario copre il periodo dal novembre 1943 al 23 febbraio 1944 e riguarda l'esperienza partigiana di Emanuele Artom.</p>
+						</typeDesc>
+						<accMat>La raccolta di scritti è accompagnata da una lettera della madre Amalia Artom</accMat>
+					</physDesc>
+
+					<!--Storia-->
+					<history>
+						<origin from="1943-11" to="1944-02-23"> 
+							<p>Le pagine di diario contenenti gli scritti autografi di <persName ref="#EA">Emanuele Artom</persName> sono state 
+							raccolte dalla madre, <persName ref="#AS">Amalia Segre Artom</persName>, nell'immediato dopoguerra e rese 
+							fruibili quali fonti storiche sull'ebraismo e sulla resistenza in Italia.</p>
+						</origin>
+					</history>
+				</msDesc>
+			</sourceDesc> 
+		</fileDesc>
+		
+		<encodingDesc>
+			<editorialDecl>
+				<correction method="markup" status="high">
+					<p>Nel testo gli errori sono stati marcati utilizzando il tag <gi>choice</gi>  per racchiudere <gi>sic</gi> in cui si riporta l'occorrenza così come compare nel testo del diario, e <gi>corr</gi> in cui l'occorrenza viene corretta. 
+					Gli errori presenti sono:
+						-"obbiezioni" al posto di "obiezioni" (riga 13 pagina 24)
+						-"sentiì" al posto di "sentii" (riga 22 pagina 24)
+						-"io" al posto di "Io" (riga 9 pagina 25)
+						-"chiaccherare" al posto di "chiacchierare" (riga 3 pagina 26)
+						-"troppo" al posto di "troppa" (riga 11 pagina 28)
+					</p>
+				</correction>
+				<normalization method="markup">
+					<p>Le normalizzazioni sono state marcate utilizzando il tag <gi>choice</gi> per racchiudere <gi>orig</gi> in cui si riporta l'occorrenza così come compare nel testo del diario, e <gi>reg</gi> in cui l'occorrenza appare normalizzata.
+						Le occorrenze che sono state normalizzate sono: 
+							-"Tedeschi" al posto di tedeschi (riga 12 pagina 24)
+							-"Val" al posto di "Valle" (riga 18 pagina 24)
+							-"ier" al posto di "ieri" (riga 2 pagina 26 e riga 7 pagina 28)
+							-"Ispagna" al posto di "Spagna" (riga 6 pagina 27)
+							-"Ebrei" al posto di "ebrei" (riga 20 pagina 27 e riga 12 pagina 28)
+							-"far" al posto di "fare" (riga 15 pagina 28)
+					</p>
+				</normalization>
+			</editorialDecl>
+		</encodingDesc>
+		
+		<!--Informazioni non bibliografiche-->
+		<profileDesc>
+			<langUsage>
+				<language ident="it">Italiano</language>
+			</langUsage>
+			<creation>
+				<listChange>
+					<desc>
+					Nelle pagine nelle quali non è presente l'indicazione del giorno nel quale sono state scritte, è stato inserito un elemento <gi>gap</gi> per la data corrispondente.
+					In particolare, è stato possibile risalire alla data del 30 novembre grazie alla disponibilità del manoscritto totale.
+					</desc>
+					<change when="1943-11-30" who="#EA">
+						Le <ref target="#p1"> pagine 24</ref>, <ref target="#p2">25</ref> e la prima parte della <ref target="#p3">pagina 26 </ref>
+						fino alla  <ref target="#r16_p3"> riga 16 </ref> sono state scritte il <date when="1943-11-30">30 novembre 1943</date>.
+					</change> 
+					
+					<change when="1943-12-1" who="#EA">
+						Le  <ref target="#p3">pagine 26 </ref> dalla  <ref target="#r17_p3">riga 17</ref>,  <ref target="#p4">27</ref> e la prima parte della  <ref target="#p5"> pagina 28</ref>
+						fino alla <ref target="#r5_p5">riga 5</ref> sono state scritte il <date when="1943-12-1">1 dicembre 1943</date>.
+					</change>
+
+					<change when="1943-12-2" who="#EA">
+						La <ref target="#p5">pagina 28 </ref>, dalla <ref target="#r6_p5">riga 6</ref> è stata scritta il <date when="1943-12-2">2 dicembre 1943</date>.
+					</change>
+				</listChange>
+			</creation>
+		</profileDesc>
+	</teiHeader>
+	
+	<!--Inizio del facsimile-->
+	<facsimile>
+		<surface n="1" xml:id="pagina_24">
+			<graphic url='img/pag24.jpg' width='758.77778px' height='1023.77778px' n='24'/>
+			<zone ulx="357" uly="70" lrx="649" lry="105" xml:id="r0_p1_F" rendition="line"/>
+			<zone ulx="102" uly="105" lrx="648" lry="139" xml:id="r1_p1_F" rendition="line"/>
+			<zone ulx="102" uly="140" lrx="650" lry="180" xml:id="r2_p1_F" rendition="line"/>
+			<zone ulx="103" uly="180" lrx="648" lry="214" xml:id="r3_p1_F" rendition="line"/>
+			<zone ulx="102" uly="215" lrx="647" lry="256" xml:id="r4_p1_F" rendition="line"/>
+			<zone ulx="102" uly="259" lrx="645" lry="290" xml:id="r5_p1_F" rendition="line"/>
+			<zone ulx="102" uly="292" lrx="648" lry="333" xml:id="r6_p1_F" rendition="line"/>
+			<zone ulx="102" uly="335" lrx="645" lry="369" xml:id="r7_p1_F" rendition="line"/>
+			<zone ulx="103" uly="369" lrx="682" lry="414" xml:id="r8_p1_F" rendition="line"/>
+			<zone ulx="103" uly="415" lrx="645" lry="443" xml:id="r9_p1_F" rendition="line"/>
+			<zone ulx="102" uly="444" lrx="647" lry="487" xml:id="r10_p1_F" rendition="line"/>
+			<zone ulx="101" uly="489" lrx="647" lry="525" xml:id="r11_p1_F" rendition="line"/>
+			<zone ulx="102" uly="526" lrx="648" lry="562" xml:id="r12_p1_F" rendition="line"/>
+			<zone ulx="102" uly="565" lrx="673" lry="603" xml:id="r13_p1_F" rendition="line"/>
+			<zone ulx="102" uly="605" lrx="683" lry="644" xml:id="r14_p1_F" rendition="line"/>
+			<zone ulx="102" uly="647" lrx="683" lry="683" xml:id="r15_p1_F" rendition="line"/>
+			<zone ulx="102" uly="684" lrx="648" lry="715" xml:id="r16_p1_F" rendition="line"/>
+			<zone ulx="102" uly="717" lrx="648" lry="753" xml:id="r17_p1_F" rendition="line"/>
+			<zone ulx="101" uly="756" lrx="649" lry="791" xml:id="r18_p1_F" rendition="line"/>
+			<zone ulx="101" uly="794" lrx="649" lry="831" xml:id="r19_p1_F" rendition="line"/>
+			<zone ulx="102" uly="834" lrx="649" lry="870" xml:id="r20_p1_F" rendition="line"/>
+			<zone ulx="101" uly="872" lrx="652" lry="906" xml:id="r21_p1_F" rendition="line"/>
+			<zone ulx="102" uly="910" lrx="650" lry="946" xml:id="r22_p1_F" rendition="line"/>
+		</surface>
+		<surface n="2" xml:id="pagina_25">
+			<graphic url='img/pag25.jpg' width='761px' height='1024px' n='25'/>
+			<zone ulx="378" uly="62" lrx="656" lry="93" xml:id="r0_p2_F" rendition="line"/>
+			<zone ulx="111" uly="99" lrx="667" lry="139" xml:id="r1_p2_F" rendition="line"/>
+			<zone ulx="110" uly="140" lrx="675" lry="173" xml:id="r2_p2_F" rendition="line"/>
+			<zone ulx="110" uly="177" lrx="668" lry="213" xml:id="r3_p2_F" rendition="line"/>
+			<zone ulx="111" uly="217" lrx="681" lry="252" xml:id="r4_p2_F" rendition="line"/>
+			<zone ulx="112" uly="256" lrx="677" lry="288" xml:id="r5_p2_F" rendition="line"/>
+			<zone ulx="111" uly="291" lrx="693" lry="329" xml:id="r6_p2_F" rendition="line"/>
+			<zone ulx="106" uly="334" lrx="674" lry="367" xml:id="r7_p2_F" rendition="line"/>
+			<zone ulx="105" uly="374" lrx="690" lry="411" xml:id="r8_p2_F" rendition="line"/>
+			<zone ulx="106" uly="412" lrx="659" lry="444" xml:id="r9_p2_F" rendition="line"/>
+			<zone ulx="101" uly="451" lrx="657" lry="476" xml:id="r10_p2_F" rendition="line"/>
+			<zone ulx="102" uly="477" lrx="657" lry="526" xml:id="r11_p2_F" rendition="line"/>
+			<zone ulx="104" uly="532" lrx="656" lry="560" xml:id="r12_p2_F" rendition="line"/>
+			<zone ulx="107" uly="562" lrx="706" lry="597" xml:id="r13_p2_F" rendition="line"/>
+			<zone ulx="108" uly="603" lrx="655" lry="637" xml:id="r14_p2_F" rendition="line"/>
+			<zone ulx="105" uly="640" lrx="702" lry="676" xml:id="r15_p2_F" rendition="line"/>
+			<zone ulx="106" uly="681" lrx="654" lry="713" xml:id="r16_p2_F" rendition="line"/>
+			<zone ulx="106" uly="718" lrx="659" lry="748" xml:id="r17_p2_F" rendition="line"/>
+			<zone ulx="105" uly="755" lrx="656" lry="786" xml:id="r18_p2_F" rendition="line"/>
+			<zone ulx="106" uly="791" lrx="630" lry="819" xml:id="r19_p2_F" rendition="line"/>
+			<zone ulx="107" uly="823" lrx="717" lry="864" xml:id="r20_p2_F" rendition="line"/>
+			<zone ulx="108" uly="868" lrx="672" lry="909" xml:id="r21_p2_F" rendition="line"/>
+			<zone ulx="97" uly="912" lrx="706" lry="949" xml:id="r22_p2_F" rendition="line"/>
+		</surface>
+		<surface n="3" xml:id="pagina_26">
+			<graphic url='img/pag26.jpg' width='760.77778px' height='1023.77778px' n='26'/>
+			<zone ulx="107" uly="99" lrx="653" lry="127" xml:id="r1_p3_F" rendition="line"/>
+			<zone ulx="106" uly="132" lrx="653" lry="168" xml:id="r2_p3_F" rendition="line"/>
+			<zone ulx="107" uly="173" lrx="652" lry="208" xml:id="r3_p3_F" rendition="line"/>
+			<zone ulx="105" uly="211" lrx="650" lry="244" xml:id="r4_p3_F" rendition="line"/>
+			<zone ulx="105" uly="252" lrx="664" lry="288" xml:id="r5_p3_F" rendition="line"/>
+			<zone ulx="107" uly="291" lrx="679" lry="328" xml:id="r6_p3_F" rendition="line"/>
+			<zone ulx="106" uly="332" lrx="649" lry="362" xml:id="r7_p3_F" rendition="line"/>
+			<zone ulx="102" uly="367" lrx="653" lry="404" xml:id="r8_p3_F" rendition="line"/>
+			<zone ulx="107" uly="408" lrx="650" lry="444" xml:id="r9_p3_F" rendition="line"/>
+			<zone ulx="106" uly="448" lrx="650" lry="476" xml:id="r10_p3_F" rendition="line"/>
+			<zone ulx="106" uly="480" lrx="652" lry="515" xml:id="r11_p3_F" rendition="line"/>
+			<zone ulx="106" uly="518" lrx="680" lry="554" xml:id="r12_p3_F" rendition="line"/>
+			<zone ulx="107" uly="557" lrx="650" lry="588" xml:id="r13_p3_F" rendition="line"/>
+			<zone points ='107,590 105,608 650,607 713,605 714,577 651,589' xml:id="r14_p3_F" rendition="hexagon"/>
+			<zone points ='107,608 106,629 669,628 668,608' xml:id="r15_p3_F" rendition="quadrilateral"/>
+			<zone points ='106,632 105,651 469,641 685,647 683,629' xml:id="r16_p3_F" rendition="pentagon"/>
+			<zone points ='106,651 106,670 651,668 651,647 472,641' xml:id="r17_p3_F" rendition="pentagon"/>
+			<zone ulx="107" uly="673" lrx="650" lry="706" xml:id="r18_p3_F" rendition="line"/>
+			<zone ulx="107" uly="711" lrx="651" lry="745" xml:id="r19_p3_F" rendition="line"/>
+			<zone ulx="107" uly="749" lrx="652" lry="784" xml:id="r20_p3_F" rendition="line"/>
+			<zone ulx="106" uly="788" lrx="652" lry="822" xml:id="r21_p3_F" rendition="line"/>
+			<zone ulx="107" uly="828" lrx="652" lry="862" xml:id="r22_p3_F" rendition="line"/>
+			<zone ulx="104" uly="867" lrx="652" lry="898" xml:id="r23_p3_F" rendition="line"/>
+			<zone ulx="100" uly="905" lrx="651" lry="941" xml:id="r24_p3_F" rendition="line"/> 
+		</surface>
+		<surface n="4" xml:id="pagina_27">
+			<graphic url='img/pag27.jpg' width='761px' height='1024px' n='27'/>
+			<zone ulx="366" uly="58" lrx="652" lry="99" xml:id="r0_p4_F" rendition="line"/>
+			<zone ulx="106" uly="95" lrx="673" lry="140" xml:id="r1_p4_F" rendition="line"/>
+			<zone ulx="107" uly="140" lrx="665" lry="178" xml:id="r2_p4_F" rendition="line"/>
+			<zone ulx="107" uly="179" lrx="650" lry="213" xml:id="r3_p4_F" rendition="line"/>
+			<zone ulx="108" uly="214" lrx="655" lry="248" xml:id="r4_p4_F" rendition="line"/>
+			<zone ulx="108" uly="248" lrx="710" lry="292" xml:id="r5_p4_F" rendition="line"/>
+			<zone ulx="106" uly="292" lrx="652" lry="330" xml:id="r6_p4_F" rendition="line"/>
+			<zone ulx="107" uly="329" lrx="656" lry="373" xml:id="r7_p4_F" rendition="line"/>
+			<zone ulx="100" uly="372" lrx="654" lry="405" xml:id="r8_p4_F" rendition="line"/>
+			<zone ulx="101" uly="405" lrx="671" lry="448" xml:id="r9_p4_F" rendition="line"/>
+			<zone ulx="103" uly="445" lrx="654" lry="485" xml:id="r10_p4_F" rendition="line"/>
+			<zone ulx="103" uly="487" lrx="654" lry="518" xml:id="r11_p4_F" rendition="line"/>
+			<zone ulx="106" uly="517" lrx="653" lry="566" xml:id="r12_p4_F" rendition="line"/>
+			<zone ulx="107" uly="566" lrx="667" lry="600" xml:id="r13_p4_F" rendition="line"/>
+			<zone ulx="107" uly="599" lrx="654" lry="638" xml:id="r14_p4_F" rendition="line"/>
+			<zone ulx="107" uly="638" lrx="660" lry="676" xml:id="r15_p4_F" rendition="line"/>
+			<zone ulx="110" uly="677" lrx="702" lry="721" xml:id="r16_p4_F" rendition="line"/>
+			<zone ulx="108" uly="724" lrx="650" lry="749" xml:id="r17_p4_F" rendition="line"/>
+			<zone ulx="108" uly="749" lrx="651" lry="787" xml:id="r18_p4_F" rendition="line"/>
+			<zone ulx="103" uly="787" lrx="654" lry="831" xml:id="r19_p4_F" rendition="line"/>
+			<zone ulx="105" uly="830" lrx="651" lry="866" xml:id="r20_p4_F" rendition="line"/>
+			<zone ulx="106" uly="868" lrx="653" lry="907" xml:id="r21_p4_F" rendition="line"/>
+			<zone ulx="108" uly="907" lrx="655" lry="945" xml:id="r22_p4_F" rendition="line"/>
+		</surface>
+		<surface n="5" xml:id="pagina_28">
+			<graphic url='img/pag28.jpg' width='761.77778px' height='1023.77778px' n='28'/>
+			<zone ulx="361" uly="57" lrx="652" lry="96" xml:id="r0_p5_F" rendition="line"/>
+			<zone ulx="103" uly="101" lrx="653" lry="139" xml:id="r1_p5_F" rendition="line"/>
+			<zone ulx="102" uly="143" lrx="654" lry="179" xml:id="r2_p5_F" rendition="line"/>
+			<zone ulx="103" uly="184" lrx="653" lry="217" xml:id="r3_p5_F" rendition="line"/>
+			<zone ulx="104" uly="222" lrx="654" lry="255" xml:id="r4_p5_F" rendition="line"/>
+			<zone ulx="104" uly="259" lrx="652" lry="295" xml:id="r5_p5_F" rendition="line"/>
+			<zone ulx="103" uly="301" lrx="654" lry="333" xml:id="r6_p5_F" rendition="line"/>
+			<zone ulx="103" uly="335" lrx="653" lry="371" xml:id="r7_p5_F" rendition="line"/>
+			<zone ulx="102" uly="373" lrx="654" lry="409" xml:id="r8_p5_F" rendition="line"/>
+			<zone ulx="104" uly="412" lrx="653" lry="449" xml:id="r9_p5_F" rendition="line"/>
+			<zone ulx="105" uly="451" lrx="652" lry="484" xml:id="r10_p5_F" rendition="line"/>
+			<zone ulx="105" uly="486" lrx="651" lry="520" xml:id="r11_p5_F" rendition="line"/>
+			<zone points ='104,520 103,559 654,563 741,591 742,512 657,520' xml:id="r12_p5_F" rendition="hexagon"/>
+			<zone ulx="104" uly="563" lrx="652" lry="600" xml:id="r13_p5_F" rendition="line"/>
+			<zone ulx="104" uly="604" lrx="654" lry="641" xml:id="r14_p5_F" rendition="line"/>
+			<zone ulx="103" uly="644" lrx="655" lry="680" xml:id="r15_p5_F" rendition="line"/>
+			<zone ulx="104" uly="683" lrx="653" lry="716" xml:id="r16_p5_F" rendition="line"/>
+			<zone ulx="104" uly="722" lrx="654" lry="755" xml:id="r17_p5_F" rendition="line"/>
+			<zone ulx="102" uly="756" lrx="667" lry="796" xml:id="r18_p5_F" rendition="line"/>
+			<zone ulx="104" uly="797" lrx="660" lry="833" xml:id="r19_p5_F" rendition="line"/>
+			<zone ulx="104" uly="835" lrx="684" lry="871" xml:id="r20_p5_F" rendition="line"/>
+			<zone ulx="104" uly="874" lrx="655" lry="909" xml:id="r21_p5_F" rendition="line"/>
+			<zone ulx="104" uly="911" lrx="655" lry="947" xml:id="r22_p5_F" rendition="line"/>
+		</surface>
+	</facsimile>
+
+	<!--Inizio del testo-->
+	<text hand="#EA"> 
+		<group>
+			<!--Codifica delle pagine-->
+			<text type="diary" subtype="personal diary">
+				<body>
+					<!--Codifica giorno 30 novembre 1943-->
+					<ab type="day" xml:id="d30_11">				
+						<!--Codifica pagina 24-->
+						<pb facs="#pagina_24" xml:id="p1" n="24"/>
+						<!--Gap data-->
+                        <date when="1943-11-30" facs="#r0_p1_F" xml:id="r0_p1"><gap reason="omitted"/></date>
+						<!--Riga 1-->
+						<lb facs="#r1_p1_F" xml:id="r1_p1" n="1" />
+						c'è poco da fare e perderei il mio tempo; in
+						<!--Riga 2-->
+						<lb facs="#r2_p1_F" xml:id="r2_p1" n="2" />
+						<list type="order">
+							<item>
+								<num type="ordinal">3<hi rend="sup">°</hi></num> luogo come uscire dalla banda?
+							</item>
+						</list>
+						Ci sono
+						<!--Riga 3-->
+						<lb facs="#r3_p1_F" xml:id="r3_p1" n="3" />
+						<num>2</num> metodi: con una dichiarazione medica
+						<!--Riga 4-->
+						<lb facs="#r4_p1_F" xml:id="r4_p1" n="4" />
+						di non star bene, ma io non voglio <w>assolu 					
+						<!--Riga 5-->
+						<lb facs="#r5_p1_F" xml:id="r5_p1" n="5" break="no" rend="double stroke"/>
+						tamente</w> continuare con il nuovo governo                                    
+						<!--Riga 6-->
+						<lb facs="#r6_p1_F" xml:id="r6_p1" n="6" />
+						quel sistema di bugie che adottai con piena
+						<!--Riga 7-->
+						<lb facs="#r7_p1_F" xml:id="r7_p1" n="7" />
+						coscienza <damage type="ink blot">di</damage> non peccare, ma con intima 		
+						<!--Riga 8-->
+						<lb facs="#r8_p1_F" xml:id="r8_p1" n="8" />	
+						ripugnanza, nei miei rapporti con il <orgName ref="#PNF">fascismo</orgName>;  
+						<!--Riga 9-->
+						<lb facs="#r9_p1_F" xml:id="r9_p1" n="9" />
+						potrei farmi cacciare dalla banda <del rend="scribble">per</del> 
+						<!--Riga 10-->
+						<lb facs="#r10_p1_F" xml:id="r10_p1" n="10" />
+						come elemento politicamente indesiderabile,
+						<!--Riga 11-->
+						<lb facs="#r11_p1_F" xml:id="r11_p1" n="11" />
+						<damage type="ink blot">ma</damage> poi dovrei abitare qui a 
+                        <placeName ref="#BG">
+							<choice>
+								<abbr type="geographic">B.</abbr>													
+								<expan cert="high" resp="#EDR">Barge</expan>
+							</choice> 
+						</placeName>
+						isolato e 
+						<!--Riga 12-->
+						<lb facs="#r12_p1_F" xml:id="r12_p1" n="12" />
+						nemico di tutti, fra due fuochi: i 
+						<choice>
+							<orig>Tedeschi</orig>
+							<reg>tedeschi</reg>
+						</choice> 
+						<!--Riga 13-->
+						<lb facs="#r13_p1_F" xml:id="r13_p1" n="13" />
+						e i partigiani. Queste le mie 
+                        			<choice>
+                        				<sic>obbiezioni</sic>
+                        				<corr cert="high" resp="#EDR">obiezioni</corr>
+                        			</choice>
+                        			, mentre
+						<!--Riga 14-->
+						<lb facs="#r14_p1_F" xml:id="r14_p1" n="14" />
+						il 
+                        			<choice>
+                        				<abbr type="title">Comm</abbr>
+                        				<expan cert="medium" resp="#EDR">Commissario</expan>
+                        			</choice> 
+                        			di 
+						<placeName ref="#TP">
+							<choice>
+								<abbr type="geographic">T.P.</abbr>		
+								<expan resp="#AC" cert="high">Torre Pellice</expan>
+							</choice>
+					    	</placeName>
+						, di cui non compresi il nome
+						<!--Riga 15-->
+						<lb facs="#r15_p1_F" xml:id="r15_p1" n="15" />
+						quando mi fu presentato, insisteva in questo senso.
+						<!--Riga 16-->
+						<lb facs="#r16_p1_F" xml:id="r16_p1" n="16" />
+						Nella fine della settimana si deciderà: o
+						<!--Riga 17-->
+						<lb facs="#r17_p1_F" xml:id="r17_p1" n="17" />
+						sarò mandato come 
+						<choice>
+							<abbr type="title">Comm</abbr>
+						    <expan resp="#AC" cert="medium">Commissario</expan>
+						</choice> 
+						o vice 
+						<choice>
+							<abbr type="title">comm</abbr>
+						    <expan resp="#AC" cert="medium">commissario</expan>
+						</choice>
+						<!--Riga 18-->
+						<lb facs="#r18_p1_F" xml:id="r18_p1" n="18" />
+						in 
+						<placeName ref="#VDA">
+							<choice>
+							    <orig>Val</orig>
+							    <reg>Valle</reg>
+							</choice> d'Aosta
+						</placeName>
+						, o resterò in 
+						<placeName ref="#BG">
+							<choice>
+								<abbr type="geographic">B</abbr>																
+								<expan resp="#AC" cert="high">Barge</expan>
+							</choice>
+						</placeName>
+						. Certo che 
+						<!--Riga 19-->
+						<lb facs="#r19_p1_F" xml:id="r19_p1" n="19" />
+						qui sono estromesso da ogni attività politica:
+						<!--Riga 20-->
+						<lb facs="#r20_p1_F" xml:id="r20_p1" n="20" />
+						<del rend="overstrike">sotto</del> il mio lavoro mi tiene separato
+						<!--Riga 21-->
+						<lb facs="#r21_p1_F" xml:id="r21_p1" n="21" />
+						dalle truppe e d'altra parte l'altro giorno
+						<!--Riga 22-->
+						<lb facs="#r22_p1_F" xml:id="r22_p1" n="22" />
+						<choice>
+                        	<sic>sentiì</sic>
+                            <corr resp="#AC" cert="high">sentii</corr>
+                       	</choice> 
+						<persName ref="#Ant">
+							<abbr type="suspension">Ant.</abbr>
+						</persName> 
+						fare questa dichiarazione
+						
+						<!--Codifica pagina 25-->
+						<pb facs="pagina_25" xml:id="p2" n="25"/>
+						<!--Gap data-->
+                        			<date when="1943-11-30" facs="#r0_p2_F" xml:id="r0_p2"><gap reason="omitted"/></date>
+						<!--Riga 1 -->
+						<lb facs="#r1_p2_F" xml:id="r1_p2" n="1" />
+						molto significativa: <q type="spoken">senza giungere alla                                    
+						<!--Riga 2-->
+						<lb facs="#r2_p2_F" xml:id="r2_p2" n="2" />
+						levatura di <persName ref="#EA">Ansaldi</persName>, vi sono altri elementi							
+						<!--Riga 3-->
+						<lb facs="#r3_p2_F" xml:id="r3_p2" n="3" />
+						idonei politicamente e qui una lista di <del rend="scribble"><gap reason="illegible" agent="scribble"></gap></del>
+						<!--Riga 4-->
+						<lb facs="#r4_p2_F" xml:id="r4_p2" n="4" />
+						<abbr type="suspension">com</abbr> ai quali si volevano dare delle funzioni. </q>               
+						<!--Riga 5-->
+						<lb facs="#r5_p2_F" xml:id="r5_p2" n="5" />
+						<del rend="scribble"><unclear reason="illegible" cert="low" resp="#EDR">Forse</unclear></del> Il 
+						<choice>
+							<abbr type="title">comm</abbr>
+							<expan cert="medium" resp="#EDR">commissario</expan>
+						</choice> 
+						di 
+						<placeName ref="#TP">
+							<choice>
+								<abbr type="geographic">T.P.</abbr>
+								<expan> Torre Pellice </expan>							
+							</choice> 
+						</placeName>
+						che ritiene che io debba
+						<!--Riga 6-->
+						<lb facs="#r6_p2_F" xml:id="r6_p2" n="6" />
+						restare in 
+						<placeName ref="#BG">
+							<choice>
+								<abbr type="geographic">B.</abbr>
+								<expan resp="#EDR" cert="high">Barge</expan>				
+							</choice> 
+						</placeName>
+						sostiene l'interesse del Partito,
+						<!--Riga 7-->
+						<lb facs="#r7_p2_F" xml:id="r7_p2" n="7" />
+						perchè il mio trasferimento, come o<add hand="#EA" rend="overwritten" place="superimposed">s</add>servava	
+						<!--Riga 8-->
+						<lb facs="#r8_p2_F" xml:id="r8_p2" n="8" />
+						anche 
+						<persName ref="#GSg">
+							<choice>
+								<abbr>G.</abbr>
+								<expan resp="#EDR" cert="high">Giorgio</expan>       
+							</choice> 
+						</persName>
+						rappresenterebbe una capitolazione,
+						<!--Riga 9-->
+						<lb facs="#r9_p2_F" xml:id="r9_p2" n="9" />
+						ma come fare? 
+						<choice>
+							<sic>io</sic>
+							<corr cert="high" resp="#EDR">Io</corr>
+						</choice> 
+						qui sono una pedina
+						<!--Riga 10-->
+						<lb facs="#r10_p2_F" xml:id="r10_p2" n="10" />
+						che serve a poco; mi si può ritirare, anche
+						<!--Riga 11-->
+						<lb facs="#r11_p2_F" xml:id="r11_p2" n="11" />
+						lasciando libero un settore  
+						<subst>
+							<del rend="overstrike">del gioco </del>
+							<add hand="#EA" place="above">della scacchiera</add>
+						</subst>
+						, per
+						<!--Riga 12-->
+						<lb facs="#r12_p2_F" xml:id="r12_p2" n="12" />
+						mandarmi in un posto dove possa essere
+						<!--Riga 13-->
+						<lb facs="#r13_p2_F" xml:id="r13_p2" n="13" />
+						più utile. Inoltre mi diedero una commissione
+						<!--Riga 14-->
+						<lb facs="#r14_p2_F" xml:id="r14_p2" n="14" />
+						riservatissima per <abbr type="suspension">Z.</abbr>, che i comandanti
+						<!--Riga 15-->
+						<lb facs="#r15_p2_F" xml:id="r15_p2" n="15" />
+						devono ignorare, perché arriva per via segreta:
+						<!--Riga 16-->
+						<lb facs="#r16_p2_F" xml:id="r16_p2" n="16" />
+						<q type="spoken">non faccia sciocchezze , ma aspetti paziente,
+						<!--Riga 17-->
+						<lb facs="#r17_p2_F" xml:id="r17_p2" n="17" />
+						perchè non tarderà ciò che attende.</q> Poi andai
+						<!--Riga 18-->
+						<lb facs="#r18_p2_F" xml:id="r18_p2" n="18" />
+						a salutare 
+						<persName ref="#M">
+							<abbr type="suspension">M.</abbr>
+						</persName>
+						, che, tra un<del rend="scribble">a</del> <del rend="overstrike">cosa e l</del> discorso e
+						<!--Riga 19-->
+						<lb facs="#r19_p2_F" xml:id="r19_p2" n="19" />
+						l'altro mi fece capire di essersi di nuovo
+						<!--Riga 20-->
+						<lb facs="#r20_p2_F" xml:id="r20_p2" n="20" />
+						unita al suo amante. Poi tornai a  
+						<placeName ref="#BG">
+							<choice>
+								<abbr type="geographic">B.</abbr>
+								<expan resp="#AC" cert="high">Barge</expan>					
+							</choice>
+						</placeName>
+						<add hand="#EA" place="above">in bicicletta</add> un
+						<!--Riga 21-->
+						<lb facs="#r21_p2_F" xml:id="r21_p2" n="21" />
+						<del rend="scrabble"><unclear reason="illegible" cert="low" resp="#AC">Per</unclear></del> bel cielo primaverile, un'aria tiepida
+						<!--Riga 22-->
+						<lb facs="#r22_p2_F" xml:id="r22_p2" n="22" />
+						e le montagne bianche di neve fresca e bassa.
+						
+						<!--Codifica pagina 26-->
+						<pb facs="#pagina_26" xml:id="p3" n="26"/>
+						<!--Riga 1-->
+						<lb facs="#r1_p3_F" xml:id="r1_p3" n="1" />														
+						continua il
+						<date when="1943-11-30" rend="align(right)">30 
+							<choice>
+								<abbr type="suspension">nov.</abbr>
+								<expan cert="high" resp="#EDR">novembre</expan>
+							</choice>
+						</date>
+						<!--Riga 2-->
+						<lb facs="#r2_p3_F" xml:id="r2_p3" n="2" />
+						Avrei voluto 
+						<choice>
+							<orig>ier</orig>
+							<reg>ieri</reg>
+						</choice> 
+						sera scrivere tutto questo, 
+						<!--Riga 3-->
+						<lb facs="#r3_p3_F" xml:id="r3_p3" n="3" />
+						ma la <persName ref="#GI">Gina</persName> mi faceva 
+						<choice>
+							<sic>chiaccherare</sic>
+							<corr cert="high" resp="#AC">chiacchierare</corr>
+						</choice>
+						. È 
+						<!--Riga 4-->
+						<lb facs="#r4_p3_F" xml:id="r4_p3" n="4" />
+						una donna fanatica, ignorante, un po'	
+						<!--Riga 5-->
+						<lb facs="#r5_p3_F" xml:id="r5_p3" n="5" />
+						piena di sé, ma molto viva e intelligente. 
+						<!--Riga 6-->
+						<lb facs="#r6_p3_F" xml:id="r6_p3" n="6" />
+						Si vede che ha letto, anche senza assimilare 
+						<!--Riga 7-->
+						<lb facs="#r7_p3_F" xml:id="r7_p3" n="7" />
+						tutto, che ha vissuto in compagnia di
+						<!--Riga 8-->
+						<lb facs="#r8_p3_F" xml:id="r8_p3" n="8" />
+						persone di pensiero, che ha pensato, che 
+						<!--Riga 9-->
+						<lb facs="#r9_p3_F" xml:id="r9_p3" n="9" />
+						ha del coraggio. Insisteva perchè <w>scri
+						<!--Riga 10-->
+						<lb facs="#r10_p3_F" xml:id="r10_p3" n="10" break="no" rend="double stroke"/>
+						vessi</w> l'inno della banda, citandomi 
+						<!--Riga 11-->
+						<lb facs="#r11_p3_F" xml:id="r11_p3" n="11" />
+						dei versi di questo  <del rend="overstrike"><unclear reason="illegible" cert="medium" resp="#AC">buon</unclear></del> gusto:
+						<!--Riga 12-->
+						<lb facs="#r12_p3_F" xml:id="r12_p3" n="12" />
+						<quote>Il popol sanguinava - come Cristo sulla Croce
+						<!--Riga 13-->
+						<lb facs="#r13_p3_F" xml:id="r13_p3" n="13" />
+						<subst>
+							<del rend="overstrike">tormentato </del>
+							<add hand="#EA" place="above">oppresso</add>
+						</subst>
+						dalla borghesia feroce</quote>
+						<!--Riga 14-->
+						<lb facs="#r14_p3_F" xml:id="r14_p3" n="14" />
+						Ora io, che ho sempre scritto versi umoristici
+						<!--Riga 15-->
+						<lb facs="#r15_p3_F" xml:id="r15_p3" n="15" />
+						<subst>
+							<del rend="overstrike">oppure </del> 
+							<add hand="#EA" place="inline">o</add> 
+						</subst>
+						introspettivi, come posso <del rend="overstrike"><unclear reason="illegible" cert="low" resp="#AC">prepo</unclear></del> comporre
+						<!--Riga 16-->
+						<lb facs="#r16_p3_F" xml:id="r16_p3" n="16" />
+						un canto collettivo <del rend="overstrike">ed</del> politico ed entusiasmante.
+					</ab>
+								
+					<!--Codifica giorno 1 dicembre 1943-->
+					<ab type="day" xml:id="d1_12">
+						<!--Riga 17-->
+						<lb facs="#r17_p3_F" xml:id="r17_p3" n="17" />
+						<date when="1943-12-1" rend="align(right)">1 dicembre.</date>
+						<!--Riga 18-->
+						<lb facs="#r18_p3_F" xml:id="r18_p3" n="18" />
+						Continuo a rendere poco e a fare poco. Ho
+						<!--Riga 19-->
+						<lb facs="#r19_p3_F" xml:id="r19_p3" n="19" />
+						veramente l'impressione di essere sabotato
+						<!--Riga 20-->
+						<lb facs="#r20_p3_F" xml:id="r20_p3" n="20" />
+						per il problema politico. Così in <country key="IT" type="nation">Italia</country> 			
+						<!--Riga 21-->
+						<lb facs="#r21_p3_F" xml:id="r21_p3" n="21" />
+						questa è la situazione: i cinque partiti												
+						<!--Riga 22-->
+						<lb facs="#r22_p3_F" xml:id="r22_p3" n="22" />
+						combattono <del rend="overstrike">fra d</del> contro i Tedeschi e i
+						<!--Riga 23-->
+						<lb facs="#r23_p3_F" xml:id="r23_p3" n="23" />
+						fascisti, ma ora si dividono in <num type="cardinal" value="2">due</num>
+						<!--Riga 24-->
+						<lb facs="#r24_p3_F" xml:id="r24_p3" n="24" />
+						gruppi: quello attivo: 
+						<orgName ref="#PdA">
+							<choice>											
+								<abbr>P.d.A</abbr>
+								<expan cert="high" resp="#EDR">Partito d'Azione</expan>        
+							</choice>
+						</orgName>
+						e
+						<orgName ref="#PCI">
+							<choice>											
+								<abbr type="organization">Co</abbr>
+								<expan cert="medium" resp="#EDR">Partito Comunista</expan>			 
+							</choice>
+						</orgName>
+						
+						<!--Codifica pagina 27-->
+						<pb facs="pagina_27" xml:id="p4" n="27"/>
+						<!--Gap data-->
+                        			<date when="1943-12-1" facs="#r0_p4_F" xml:id="r0_p4"><gap reason="omitted"/></date>
+						<!--Riga 1-->
+						<lb facs="#r1_p4_F" xml:id="r1_p4" n="1" />
+						e quello meno attivo degli altri <num type="cardinal" value="3">3</num>, <del rend="overstrike"><unclear reason="illegible" cert="low" resp="#EDR">che, al</unclear></del>.
+						<!--Riga 2-->
+						<lb facs="#r2_p4_F" xml:id="r2_p4" n="2" />
+						<orgName ref="#PdA">
+							<choice>											
+								<abbr>P.d.A</abbr>
+								<expan cert="high" resp="#EDR">Partito d'Azione</expan>
+							</choice>
+						</orgName>
+						e
+						<orgName ref="#PCI">
+							<choice>											
+								<abbr type="organization">Com.</abbr>
+								<expan cert="medium" resp="#EDR">Partito Comunista</expan>				
+							</choice>
+						</orgName>
+						poi riprendono ad urtarsi
+						<!--Riga 3-->
+						<lb facs="#r3_p4_F" xml:id="r3_p4" n="3" />
+						fra di loro. Curiosa è la situazione
+						<!--Riga 4-->
+						<lb facs="#r4_p4_F" xml:id="r4_p4" n="4" />
+						creatasi al<add hand="#EA" place="inline">la</add> <del rend="overstrike">coma</del> base di comando. È
+						<!--Riga 5-->
+						<lb facs="#r5_p4_F" xml:id="r5_p4" n="5" />
+						arrivato un certo <add hand="#EA" place="above">calzolaio</add> <persName ref="#CA">Carnera</persName>, che ha combattuto
+						<!--Riga 6-->
+						<lb facs="#r6_p4_F" xml:id="r6_p4" n="6" />
+						nella legione garibaldina in 
+						<country type="nation" key="SP">
+							<choice>
+								<orig>Ispagna</orig>
+								<reg>Spagna</reg> 
+							</choice>
+						</country>
+						,      
+						<!--Riga 7-->
+						<lb facs="#r7_p4_F" xml:id="r7_p4" n="7" />
+						uomo valorosissimo, comunista, <del rend="overstrike">che nel</del>
+						<!--Riga 8-->
+						<lb facs="#r8_p4_F" xml:id="r8_p4" n="8" />
+						<del rend="overstrike">calzolaio,</del> che è stato promosso ufficiale  
+						<!--Riga 9-->
+						<lb facs="#r9_p4_F" xml:id="r9_p4" n="9" />
+						sul campo. Ecco che <del rend="scribble">la</del> la maggior parte
+						<!--Riga 10-->
+						<lb facs="#r10_p4_F" xml:id="r10_p4" n="10" />
+						dei soldati si ribella a questo <del rend="scribble"><gap reason="illegible" agent="scribble"></gap></del>
+						<!--Riga 11-->
+						<lb facs="#r11_p4_F" xml:id="r11_p4" n="11" />
+						proletario, che li tratta s<add hand="#EA" rend="overwritten" place="superimposed">c</add>ortesemente,
+						<!--Riga 12-->
+						<lb facs="#r12_p4_F" xml:id="r12_p4" n="17" />
+						e <del rend="overstrike"><unclear reason="illegible" cert="low" resp="#AC">passo</unclear></del> 
+						<subst>
+							<add hand="#EA" place="above">vuole </add> 
+							<del rend="overstrike">vogliono</del> 
+						</subst>
+						essere comandata da
+						<!--Riga 13-->
+						<lb facs="#r13_p4_F" xml:id="r13_p4" n="13" />
+						borghesi, come <persName ref="#LO">Longone</persName> o <persName ref="#RO">Romano</persName>. Così
+						<!--Riga 14-->
+						<lb facs="#r14_p4_F" xml:id="r14_p4" n="14" />
+						la rivoluzione comunista è condannata
+						<!--Riga 15-->
+						<lb facs="#r15_p4_F" xml:id="r15_p4" n="15" />
+						dagli stessi soldati. Se il <del rend="overstrike">popolo</del> 
+						<orgName ref="#PdA">
+							<choice>											
+								<abbr>P.d.A</abbr>
+								<expan cert="high" resp="#AC">Partito d'Azione</expan>
+							</choice>
+						</orgName>
+						saprà
+						<!--Riga 16-->
+						<lb facs="#r16_p4_F" xml:id="r16_p4" n="16" />
+						avere degli uomini, come ha un programma,
+						<!--Riga 17-->
+						<lb facs="#r17_p4_F" xml:id="r17_p4" n="17" />
+						sua sarà la vittoria domani.
+						<!--Riga 18-->
+						<lb facs="#r18_p4_F" xml:id="r18_p4" n="18" />
+						Vengo dalla signora <persName ref="#SE">Segre</persName>: mi dice che il 	
+						<!--Riga 19-->
+						<lb facs="#r19_p4_F" xml:id="r19_p4" n="19" />
+						<abbr type="suspension">Giorn.</abbr> <add hand="#EA" place="inline">Radio</add> dell'una <add hand="#EA" place="above">aveva</add> annunzia<add hand="#EA" place="inline">to</add> i <w>provvedi
+						<!--Riga 20-->
+						<lb facs="#r20_p4_F" xml:id="r20_p4" n="20" break="no" rend="double stroke"/>
+						menti</w> antisemiti: tutti gli
+						<choice>
+                            				<orig>Ebrei</orig>
+                            				<reg>ebrei</reg>
+                        			</choice>
+						in campo 
+						<!--Riga 21-->
+						<lb facs="#r21_p4_F" xml:id="r21_p4" n="21" />
+						di concentramento; <del rend="overstrike">le cose confi</del> i beni
+						<!--Riga 22-->
+						<lb facs="#r22_p4_F" xml:id="r22_p4" n="22" />
+						confiscati a favore dei sinistrati. <del rend="scribble"><gap reason="illegible" agent="scribble"></gap></del>
+						
+						<!--Codifica pagina 28-->
+						<pb facs="pagina_28" xml:id="p5" n="28"/>
+						<!--Gap data-->
+                        			<date when="1943-12-1" facs="#r0_p5_F" xml:id="r0_p5"><gap reason="omitted"/></date>
+						<!--Riga 1-->
+						<lb facs="#r1_p5_F" xml:id="r1_p5" n="1" />
+						Che cosa ne sarà della mia famiglia?
+						<!--Riga 2-->
+						<lb facs="#r2_p5_F" xml:id="r2_p5" n="2" />
+						Forse non vedrò più né mio padre, né
+						<!--Riga 3-->
+						<lb facs="#r3_p5_F" xml:id="r3_p5" n="3" />
+						mia madre. In questo caso chiederò al
+						<!--Riga 4-->
+						<lb facs="#r4_p5_F" xml:id="r4_p5" n="4" />
+						comandante di essere mandato in una
+						<!--Riga 5-->
+						<lb facs="#r5_p5_F" xml:id="r5_p5" n="5" />
+						missione tale da essere ucciso.	
+					</ab>
+							
+					<!--Codifica giorno 2 dicembre 1943-->
+					<ab type="day" xml:id="d2_12">
+						<!--Riga 6-->
+						<lb facs="#r6_p5_F" xml:id="r6_p5" n="6" />
+						<date when="1943-12-2" rend="align(right)">2 dicembre.</date>
+						<!--Riga 7-->
+						<lb facs="#r7_p5_F" xml:id="r7_p5" n="7" />
+						<choice>
+							<orig>Ier</orig>
+							<reg>Ieri</reg>
+						</choice>
+						sera <del rend="overstrike">ho sempre pensato al nuovo editto,</del>
+						<!--Riga 8-->
+						<lb facs="#r8_p5_F" xml:id="r8_p5" n="8" />
+						<del rend="overstrike">mentre</del> <persName ref="#GI">Gina</persName> mi diceva: «<q><said aloud="true" direct="true" rend="pre(«) post(»)">eppure un <w>ra  
+						<!--Riga 9-->
+						<lb facs="#r9_p5_F" xml:id="r9_p5" n="9" break="no" rend="double stroke"/>
+						gazzo</w> come te dovrebbe diventare 
+						<choice>
+							<abbr type="title">com</abbr>
+							<expan cert="low" resp="#EDR">comandante</expan> 			
+						</choice> 
+						; sei 
+						<!--Riga 10-->
+						<lb facs="#r10_p5_F" xml:id="r10_p5" n="10" />
+						troppo intelligente per non esserlo e hai dato 
+						<!--Riga 11-->
+						<lb facs="#r11_p5_F" xml:id="r11_p5" n="11" />
+						<choice>
+							<sic>troppo</sic>
+							<corr cert="high" resp="#EDR">troppa</corr> 
+						</choice>
+						prova di idealismo venendo a
+						<!--Riga 12-->											
+						<lb facs="#r12_p5_F" xml:id="r12_p5" n="12" />
+						combattere senza necessità</said></q>»
+						<add hand="#EA" place="above">e intanto io pensavo al nuovo editto, alla mia famiglia, agli altri
+							<choice>
+								<orig>Ebrei</orig>
+								<reg>ebrei</reg>
+							</choice>.
+						</add> Stanotte dormii,
+						<!--Riga 13-->
+						<lb facs="#r13_p5_F" xml:id="r13_p5" n="13" />
+						ma <del rend="overstrike">qu</del> dopo essermi svegliato, non riuscii
+						<!--Riga 14-->
+						<lb facs="#r14_p5_F" xml:id="r14_p5" n="14" />
+						più a prendere sonno. Più che con la <w>spe 
+						<!--Riga 15-->
+						<lb facs="#r15_p5_F" xml:id="r15_p5" n="15" break="no" rend="double stroke"/> 
+						ranza</w> di 
+						<choice>
+							<orig>far</orig>
+							<reg>fare</reg>
+						</choice> 
+						qualcosa di utile, tanto per
+						<!--Riga 16-->
+						<lb facs="#r16_p5_F" xml:id="r16_p5" n="16" />
+						provvedere e agitarmi, per non stare in
+						<!--Riga 17-->
+						<lb facs="#r17_p5_F" xml:id="r17_p5" n="17" />
+						ozio con l'apprensione, sono sceso in 
+						<!--Riga 18-->
+						<lb facs="#r18_p5_F" xml:id="r18_p5" n="18" />
+						paese alle <time when="07:00:00">7</time> ed ora aspetto alla stazione
+						<!--Riga 19-->
+						<lb facs="#r19_p5_F" xml:id="r19_p5" n="19" />
+						l'arrivo del treno, caso mai <w>arrivas
+						<!--Riga 20-->
+						<lb facs="#r20_p5_F" xml:id="r20_p5" n="20" break="no" rend="double stroke"/> 
+						sero</w> <del rend="scribble"><gap reason="illegible" agent="scribble"></gap></del>. Ho pregato 
+						<persName ref="#A">
+							<abbr type="suspension">A</abbr><del rend="scribble">nt</del>
+						</persName>
+						. ieri di procurarmi
+						<!--Riga 21-->
+						<lb facs="#r21_p5_F" xml:id="r21_p5" n="21" />
+						carte false per papà, mamma e nonna;
+						<!--Riga 22-->
+						<lb facs="#r22_p5_F" xml:id="r22_p5" n="22" />
+						Appena le avrò andrò a 
+						<placeName ref="#TP">
+							<choice>
+								<abbr type="geographic">T.P.</abbr>
+								<expan cert="high" resp="#AC">Torre Pellice</expan>
+							</choice>
+						</placeName>
+						, cercherò <abbr type="suspension">F</abbr>					
+					</ab>
+				</body>	
+			</text>
+		</group>
+
+		<!--Appendici-->
+		<back>
+			<div>
+			<!-- Persone -->
+				<listPerson>
+					<!--Emanuele Artom-->
+					<person xml:id="EA" sameAs="http://viaf.org/viaf/69734166">
+						<persName role="partisan">
+							<forename>Emanuele</forename>
+							<surname>Artom</surname>
+							<addName type="alias">Eugenio Ansaldi</addName>
+							<ref target="https://it.wikipedia.org/wiki/Emanuele_Artom"/>
+						</persName>
+						<birth>
+							<date when="1915-06-23">23 giugno 1915</date>
+                            				<placeName ref="#AO">
+								<settlement type="municipality">Aosta</settlement>
+				                		<settlement type="provincia" key="AO">Aosta</settlement>
+								<country key="IT" type="nation">Italia</country>
+							</placeName>
+						</birth>
+						<death>
+							<date when="1944-04-7">7 aprile 1944</date>
+                           				<placeName ref="#TO">
+                                				<settlement type="municipality">Torino</settlement>
+                                				<settlement type="provincia" key="TO">Torino</settlement>
+								<country key="IT" type="nation">Italia</country>
+                            				</placeName>
+						</death>
+						<note>Emanuele Artom è stato un partigiano e storico italiano di origine ebraica, combattente della resistenza.
+							Con il nome di Eugenio Ansaldi si arruolò tra i partigiani come delegato azionista in una brigata garibaldina di Barge.
+						</note>
+					</person>
+							
+					<!-- Giorgio Segre -->
+                    			<person xml:id="GSg">
+                        			<persName role="university professor">
+                            				<forename>Giorgio</forename>
+                            				<surname>Segre</surname>
+							<ref target="https://digital-library.cdec.it/cdec-web/persone/detail/person-it-cdec-eaccpf0001-000466/segre-giorgio.html"/>
+                        			</persName>
+                        			<sex>M</sex>
+                        			<birth>
+                            				<date when="1920-02-20">20 Febbraio 1920</date>
+                            				<placeName ref="#TO">
+                                				<settlement type="municipality">Torino</settlement>
+                                				<settlement type="provincia" key="TO">Torino</settlement>
+								<country key="IT" type="nation">Italia</country>
+                            				</placeName>
+                        			</birth>
+						<death>
+                            				<date when="1996-08-13">13 Agosto 1996</date>
+                        			</death>
+						<note>Giorgio Segre gestì insieme ad Emanuele Artom la Biblioteca della Comunità Ebraica. Nel secondo dopoguerra
+                            				divenne professore ordinario di Farmacologia ed è membro di diversi comitati scientifici.
+                        			</note>
+                    			</person>
+			
+					<!-- Amalia Segre Artom -->
+					<person xml:id="AS">
+						<persName role="teacher">
+							<forename>Amalia</forename>
+					    		<surname>Segre</surname>
+					    		<ref target="http://digital-library.cdec.it/cdec-web/persone/detail/person-it-cdec-eaccpf0001-017448/segre-amalia.html?persone=%22Segre%2C+Amalia%22"/>
+						</persName>
+						<sex>F</sex>
+						<birth>
+					    		<date when="1890">1890</date>
+					    		<placeName ref="#TO">
+								<settlement type="municipality">Torino</settlement>
+								<settlement type="provincia" key="TO">Torino</settlement>
+								<country key="IT" type="nation">Italia</country>
+					    		</placeName>
+						</birth>
+						<death>
+					    		<date when="1972-10-09">09 Ottobre 1972</date>
+					    		<placeName ref="#TO">
+								<settlement type="municipality">Torino</settlement>
+								<settlement type="provincia" key="TO">Torino</settlement>
+								<country key="IT" type="nation">Italia</country>
+					    		</placeName>
+						</death>
+						<note>Madre di Emanuele Artom. Conservò parte della docummentazione per garantire la fruibilità dei Diari quali fonti storiche sull'ebraismo e sulla Resistenza in Italia.</note>
+				    	</person>
+							
+					<!-- Gina -->
+				    	<person xml:id="GI">
+							<persName> 
+									<forename>Gina</forename>
+							</persName>
+							<sex>F</sex>
+								<birth>
+									<date>Sconosciuta</date>
+								</birth>
+								<death>
+									<date>Sconosciuta</date>
+								</death>
+								<note>Citata da Emanuele Artom alla riga 3 della pagina 26 (giorno 30 novembre) e alla riga 8 della pagina 28 (giorno 02 dicembre).</note>
+				    	</person>
+					
+					<!-- Carnera -->
+				    	<person xml:id="CA">
+						<persName role="shoemaker"> 
+					    		<surname>Carnera</surname>
+						</persName>
+						<sex>M</sex>
+						<birth>
+							<date>Sconosciuta</date>
+						</birth>
+						<death>
+							<date>Sconosciuta</date>
+						</death>
+						<note>Citato da Emanuele Artom alla riga 05 della pagina 27 (giorno 01 dicembre).</note>
+				    	</person>
+
+				     	<!-- Romano -->
+				     	<person xml:id="RO">
+						<persName> 
+					    		<surname>Romano</surname>
+						</persName>
+						<sex>M</sex>
+						<birth>
+							<date>Sconosciuta</date>
+						</birth>
+						<death>
+							<date>Sconosciuta</date>
+						</death>
+						<note>Citato da Emanuele Artom alla riga 13 della pagina 27 (giorno 01 dicembre).</note>
+                    			</person>
+
+				    	<!-- Longone -->
+				    	<person xml:id="LO">
+						<persName> 
+					    		<surname>Longone</surname>
+						</persName>
+						<sex>M</sex>
+						<birth>
+							<date>Sconosciuta</date>
+						</birth>
+						<death>
+							<date>Sconosciuta</date>
+						</death>
+						<note>Citato da Emanuele Artom alla riga 13 della pagina 27 (giorno 01 dicembre).</note>
+				    	</person>
+
+                    			<!-- Segre -->
+                    			<person xml:id="SE">
+                        			<persName> 
+                            				<surname>Segre</surname>
+                        			</persName>
+                        			<sex>F</sex>
+                        			<birth>
+							<date>Sconosciuta</date>
+						</birth>
+						<death>
+							<date>Sconosciuta</date>
+						</death>
+						<note>Citato da Emanuele Artom alla riga 13 della pagina 27 (giorno 01 dicembre).</note>
+                    			</person>
+
+					<!-- Ant -->
+				    	<person xml:id="Ant">
+						<persName type="abbreviation">Ant.</persName>	
+						<birth>
+							<date>Sconosciuta</date>
+						</birth>
+						<death>
+							<date>Sconosciuta</date>
+						</death>
+						<note>Citato da Emanuele Artom alla riga 22 della pagina 24 (giorno 30 novembre).</note>
+				    	</person>
+					
+					<!-- M -->
+				    	<person xml:id="M">
+						<persName type="abbreviation">M.</persName>
+						<sex>F</sex>
+						<birth>
+							<date>Sconosciuta</date>
+						</birth>
+						<death>
+							<date>Sconosciuta</date>
+						</death>
+						<note>Citato da Emanuele Artom alla riga 18 della pagina 25 (giorno 30 novembre).</note>
+				    	</person>
+					
+					<!-- A -->
+				    	<person xml:id="A">
+						<persName type="abbreviation">A.</persName>
+						<birth>
+							<date>Sconosciuta</date>
+						</birth>
+						<death>
+							<date>Sconosciuta</date>
+						</death>
+						<note>Citato da Emanuele Artom alla riga 20 della pagina 28 (giorno 2 dicembre).</note>
+				    	</person>			
+
+					<!--Angelo Mario Del Grosso-->
+					<person xml:id="AMDG" sameAs="https://viaf.org/viaf/323148207835400342025">
+						<persName>
+							<forename>Angelo</forename>
+						   	<forename>Mario</forename>
+						    	<surname>Del Grosso</surname>
+						</persName>			
+						<sex>M</sex>
+					</person>
+							
+					<!-- Arianna Calloni -->
+				     	<person xml:id="AC">
+						<persName>
+					    		<forename>Arianna</forename>
+					    		<surname>Calloni</surname>
+						</persName>
+						<sex>F</sex>
+						<birth>
+					    		<date when="2000-04-30">30 Aprile 2000</date>
+						</birth>
+				    	</person>
+
+					<!-- Enrica Di Rado -->
+				    	<person xml:id="EDR">
+						<persName>
+					    		<forename>Enrica</forename>
+					    		<surname>Di Rado</surname>
+						</persName>
+						<sex>F</sex>
+						<birth>
+					    		<date when="2000-04-16">16 Aprile 2000</date>
+						</birth>
+				    	</person>
+							
+					<!-- Guri Schwarz -->
+                    			<person xml:id="GS">
+                        			<persName> 
+							<forename>Guri</forename>
+                            				<surname>Schwarz</surname>
+                        			</persName>
+                        			<sex>M</sex>
+                    			</person>
+
+					<!-- Paola De Benedetti -->
+                    			<person xml:id="PDB">
+                        			<persName> 
+							<forename>Paola</forename>
+                            				<surname>De Benedetti</surname>
+                        			</persName>
+                        			<sex>F</sex>
+			   			<birth>
+                            				<date when="1934-09-09">09 Settembre 1934</date>
+                            				<placeName ref="#AL">
+                                				<settlement type="municipality">Alessandria</settlement>
+                                				<settlement type="provincia" key="AL">Alessandria</settlement>
+								<country key="IT" type="nation">Italia</country>
+                            				</placeName>
+                        			</birth>  
+                    			</person>
+
+					<!-- Eloisa Ravenna -->
+                    			<person xml:id="ER">
+						<persName> 
+							<forename>Eloisa</forename>
+							<surname>Ravenna</surname>
+						</persName>
+						<sex>F</sex>
+							<birth>
+								<date when="1930-12-12">12 Dicembre 1930</date>
+								<placeName ref="#TO">
+									<settlement type="municipality">Torino</settlement>
+									<settlement type="provincia" key="TO">Torino</settlement>
+									<country key="IT" type="nation">Italia</country>
+								</placeName>
+							</birth>
+							<death>
+								<date when="1973-09-08">08 Settembre 1973</date>
+								<placeName ref="#TO">
+									<settlement type="municipality">Torino</settlement>
+									<settlement type="provincia" key="TO">Torino</settlement>
+									<country key="IT" type="nation">Italia</country>
+								</placeName>
+							</death> 
+                    			</person>
+				</listPerson>
+						
+				<!-- Luoghi -->
+				<listPlace>
+					
+					<!-- Barge -->
+                    			<place xml:id="BG">
+                        			<placeName ref="https://www.geonames.org/6541848/barge.html https://www.treccani.it/enciclopedia/barge">Barge</placeName>
+                        			<country key="IT" type="nation">Italia</country>
+						<desc>Barge è un comune italiano della provincia di Cuneo, in Piemonte. Qui Emanuele Artom si arruola tra i partigiani come delegato azionista.</desc>
+                    			</place>
+					
+		          		<!-- Torre Pellice -->
+                    			<place xml:id="TP">
+                        			<placeName ref="https://www.geonames.org/6539527/torre-pellice.html https://www.treccani.it/enciclopedia/torre-pellice/">Torre Pellice</placeName>
+                        			<country key="IT" type="nation">Italia</country>
+						<desc>Torre Pellice è un comune italiano della città metropolitana di Torino, nella Val Pellice, in Piemonte.</desc>
+                    			</place>
+		
+					<!-- Valle d'Aosta -->
+				    	<place xml:id="VDA">
+						<placeName type="region" ref="https://www.treccani.it/enciclopedia/valle-d-aosta/">Valle d'Aosta</placeName>
+						<country key="IT" type="nation">Italia</country>
+						<desc>La Valle d'Aosta è una regione italiana a statuto speciale dell'Italia nord-occidentale.</desc>
+				    	</place>
+
+				    	<!-- Torino -->
+				    	<place xml:id="TO">
+						<placeName ref="https://www.geonames.org/3165523/torino.html https://www.treccani.it/enciclopedia/torino/">Torino</placeName>
+						<country key="IT" type="nation">Italia</country>
+				    	</place>
+
+				    	<!-- Aosta -->
+				    	<place xml:id="AO">
+						<placeName ref="https://www.geonames.org/3182997/aosta.html https://www.treccani.it/enciclopedia/aosta/">Aosta</placeName>
+						<country key="IT" type="nation">Italia</country>
+				    	</place>
+			
+					<!-- Milano -->
+                    			<place xml:id="MI">
+                        			<placeName ref="https://www.geonames.org/3173435/milan.html https://www.treccani.it/enciclopedia/milano/">Milano</placeName>
+                        			<country key="IT" type="nation">Italia</country>
+                    			</place>
+					
+					<!-- Alessandria -->
+					<place xml:id="AL">
+						<placeName ref="https://www.geonames.org/3183299/alessandria.html https://www.treccani.it/enciclopedia/alessandria/">Alessandria</placeName>
+						<country key="IT" type="nation">Italia</country>
+					</place>
+				</listPlace>
+				
+                		<!-- Organizzazioni -->
+				<listOrg>
+					<!--Partito d'Azione-->
+					<org xml:id="PdA" role="party">
+						<orgName ref="https://www.treccani.it/enciclopedia/partito-d-azione_(Dizionario-di-Storia)">Partito d'Azione</orgName>
+						<desc>
+							Il Partito d'Azione (PdA) è stato un partito politico italiano di centro-sinistra fondato nel 1942, per la confluenza di Giustizia e libertà 
+							e di gruppi liberalsocialisti e repubblicani, allo scopo di combattere il fascismo e di superare l'antitesi di liberalismo e socialismo.
+						</desc>
+						<country key="IT" type="nation">Italia</country>					
+					</org>
+					
+					<!--Partito Comunista Italiano-->
+					<org xml:id="PCI" role="party">
+						<orgName ref="https://www.treccani.it/enciclopedia/partito-comunista-italiano/">Partito Comunista Italiano</orgName>
+						<desc>
+							Il Partito Comunista Italiano (PCI) è stato un partito politico italiano di sinistra fondato a Livorno nel gennaio 1921 nel corso 
+							del 17° congresso del PSI, per iniziativa della corrente di sinistra del partito guidata da A. Bordiga e A. Gramsci.
+						</desc>
+						<country key="IT" type="nation">Italia</country>					
+					</org>
+					
+					<!--Partito Nazionale Fascista-->
+						<org xml:id="PNF" role="party">
+							<orgName ref="https://www.treccani.it/enciclopedia/partito-nazionale-fascista_%28Dizionario-di-Storia%29/">Partito Comunista Italiano</orgName>
+							<desc>
+								Il Partito Nazionale Fascista (PNF) è stato un partito politico italiano. Nato nel novembre 1921 dalla trasformazione in partito del movimento 
+                                				Fasci italiani di combattimento, guidò la cosiddetta marcia su Roma che nell'autunno del 1922 portò Benito Mussolini a divenire presidente del Consiglio dei ministri. 
+							</desc>
+							<country key="IT" type="nation">Italia</country>					
+						</org>
+					
+					<!--Centro di documentazione ebraica contemporanea-->
+					<org xml:id="CDEC" role="history insitute">
+						<orgName ref="https://www.cdec.it/">Centro di documentazione ebraica contemporanea</orgName>
+						<desc>
+							Il centro di documentazione ebraica contemporanea è una fondazione impegnata in attività di ricerca sia di carattere storico che sociologico.
+							Gli ambiti di suo maggiore interesse sono la storia della Shoah, la storia e la cultura degli ebrei in età contemporanea; il ruolo nella società e l’immagine degli ebrei nell’opinione pubblica italiana, dall’Unità ai giorni nostri.
+						</desc>
+						<country key="IT" type="nation">Italia</country>					
+					</org>
+				</listOrg>
+				
+				<!-- Bibliografia -->
+				<listBibl>
+					<bibl xml:id="bibl1" xml:lang="it">
+						<author ref="#EA">
+							<forename>Emanuele</forename>
+							<surname>Artom</surname>
+						</author>
+						<editor ref="#GS" role="curator">
+							<forename>Guri</forename>
+							<surname>Schwarz</surname>
+						</editor>
+						<title type="full">	Diari di un partigiano ebreo</title> 
+						<title type="sub">Gennaio 1940 - febbraio 1944</title>
+						<pubPlace><placeName ref="#TO">Torino</placeName></pubPlace>
+                        			<date when="2008">2008</date>
+						<publisher>Bollati Boringhieri</publisher>
+					</bibl>
+
+					<bibl xml:id="bibl2" xml:lang="it">
+						<author ref="#EA">
+								<forename>Emanuele</forename>
+								<surname>Artom</surname>
+							</author>
+						<editor ref="#PDB" role="curator">
+							<forename>Paola</forename>
+							<surname>De Benedetti</surname>
+						</editor>
+						<editor ref="#ER" role="curator">
+							<forename>Eloisa</forename>
+							<surname>Ravenna</surname>
+						</editor>
+						<title type="full">	Diari</title>
+						<title type="sub">gennaio 1940 - febbraio 1944</title>
+						<pubPlace><placeName ref="#MI">Milano</placeName></pubPlace>
+                        			<date when="1966">1966</date>
+						<publisher> 
+							<orgName ref="#CDEC">Centro di documentazione ebraica contemporanea</orgName>
+						</publisher>
+					</bibl>
+				</listBibl>
+			</div>
+		</back>
+	</text>
+</TEI>
