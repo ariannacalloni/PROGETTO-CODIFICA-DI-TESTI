@@ -252,7 +252,7 @@
                         <xsl:attribute name="id">
                             <xsl:value-of select="@xml:id"/>
                         </xsl:attribute>
-                        <xsl:attribute name="href">#<xsl:value-of select="@xml:id"/></xsl:attribute>
+                        <xsl:attribute name="href">##<xsl:value-of select="@xml:id"/></xsl:attribute>
                     </xsl:element>
                 </xsl:for-each>
                 <xsl:for-each select="tei:zone[@rendition='quadrilateral']">
@@ -271,7 +271,7 @@
                         <xsl:attribute name="id">
                             <xsl:value-of select="@xml:id"/>
                         </xsl:attribute>
-                        <xsl:attribute name="href">#<xsl:value-of select="@xml:id"/></xsl:attribute>
+                        <xsl:attribute name="href">##<xsl:value-of select="@xml:id"/></xsl:attribute>
                     </xsl:element>
                 </xsl:for-each>
                  <xsl:for-each select="tei:zone[@rendition='pentagon']">
@@ -291,7 +291,7 @@
                         <xsl:attribute name="id">
                             <xsl:value-of select="@xml:id"/>
                         </xsl:attribute>
-                        <xsl:attribute name="href">#<xsl:value-of select="@xml:id"/></xsl:attribute>
+                        <xsl:attribute name="href">##<xsl:value-of select="@xml:id"/></xsl:attribute>
                     </xsl:element>
                 </xsl:for-each>
                  <xsl:for-each select="tei:zone[@rendition='hexagon']">
@@ -312,7 +312,7 @@
                         <xsl:attribute name="id">
                             <xsl:value-of select="@xml:id"/>
                         </xsl:attribute>
-                        <xsl:attribute name="href">#<xsl:value-of select="@xml:id"/></xsl:attribute>
+                        <xsl:attribute name="href">##<xsl:value-of select="@xml:id"/></xsl:attribute>
                     </xsl:element>
                 </xsl:for-each>
             </xsl:element>
